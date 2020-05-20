@@ -62,7 +62,8 @@ ion-menu.md ion-item ion-icon {
 }
 
 ion-menu.md ion-item ion-label {
-  font-weight: 500;
+  font-family: 'Montserrat-Bold';
+  color: #666666;
 }
 
 ion-menu.ios ion-content {
@@ -116,4 +117,13 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+
+.close-menu{
+  font-size: 50px;
+}
+
+.settings-icon{
+  position: relative;
+  top: 3px;
 }

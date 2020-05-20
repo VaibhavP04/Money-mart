@@ -1,28 +1,71 @@
-ion-menu-button {
-  color: var(--ion-color-primary);
-}
-
-#container {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  .login-form{
+    width: 75%;
+    margin: 0 auto;
+    .login-form-controls{
+      margin-top: 50px;
+      position: relative;
+      ion-input{
+        margin-bottom: 15px;
+        border: 2px solid #666;
+        border-radius: 20px;
+        --padding-start: 20px;
+        height: 48px;
+      }
+      .password-icon{
+        position: absolute;
+        right: 20px;
+        top: 75px;
+        font-size: 20px;
+        color: #666666;
+      }
+      .signIn-Btn{
+        --background: #009CF0;
+        --border-color: transparent;
+        --color: #fff;
+        height: 48px;
+        font-family: 'Montserrat-Bold';
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-top: 23px;
+        --border-radius: 20px;
+      }
+      .forgot-pwd-link{
+        color: #666666;
+        font-family: 'Montserrat-SemiBold';
+        font-size: 16px;
+        text-align: center;
+      }
+      .seperator{
+        font-size: 16px;
+        text-align: center;
+        color: #666666;
+        font-family: 'Montserrat-Medium';
+      }
+    }
+  }
+  .new-customer-btn{
+    color: #009CF0;
+    font-family: 'Montserrat-Bold';
+    font-size: 18px;
+    --border-color: 1px solid #009CF0;
+    text-transform: capitalize;
+    margin: 50px 0 0  0;
+    width: 75%;
+    height: 48px;
+    --border-radius: 20px;
+  }
+  .donot-have-account-text{
+    color: #666666;
+    font-size: 16px;
+    text-align: center;
+    span{
+      font-family: 'Montserrat-Bold';
+    }
+  }
 }

@@ -1,0 +1,201 @@
+.dashboard-container{
+    background-image: url('../../assets/images/dashboard-bg.svg');
+    height: 100%;
+    .dashboard-top-row-buttons{
+        padding: 0 20px;
+        ion-menu-button{
+            color: #fff;
+        }
+    }
+    .notification-icon{
+        color: #fff;
+        font-size: 20px;
+    }
+    .dashboard-top-row-buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+    .user-info-text{
+        padding: 0 40px;
+        margin-top: 35px;
+        .welcome-text{
+            color: #fff;
+            font-family: 'Montserrat-Light';
+            font-size: 20px;
+        }
+        .user-text{
+            font-family: 'Montserrat-Bold';
+            font-size: 38px;
+            color: #fff;
+        }
+        .loan-text{
+            color: #fff;
+            font-family: 'Montserrat-Regular';
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    .loan-list-details{
+        background: #fff;
+        height: 70%;
+        margin-top: 50px;
+        border-top-right-radius: 100px;
+        padding: 33px 30px;
+        overflow: scroll;
+        .offer-zone{
+            border: 1px solid #fcd224;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #FFFAE3;
+            p{
+                margin-left: 10px;
+                color: #666666;
+                font-size: 18px;
+                font-family: 'Montserrat-Bold';
+            }
+        }
+        .current-loan-list{
+            margin-top: 20px;
+            .current-loan-text, .current-loan-product-text{
+                color: #666666;
+                font-size: 18px;
+                font-family: 'Montserrat-Bold';
+                text-decoration: underline;
+                span{
+                    display: inline-block;
+                    border-bottom: 2px solid #666666;
+                    padding-bottom: 2px;
+                }
+            }
+            .loan-number{
+                color: #666666;
+                font-family: 'Montserrat-Bold';
+                font-size: 18px;
+                margin-top: 25px;
+                span{
+                    font-family: 'Montserrat-Light';
+                }
+            }
+            .current-loan-product-text{
+                margin-bottom: 25px;
+            }
+            .scroll-products{
+                display: flex;
+                overflow: scroll;
+                .product-one {
+                    margin-right: 20px;
+                    .product-image{
+                        background: #00C45B;
+                        width: 128px;
+                        height: 128px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 15px;
+                        margin: 0 auto;
+                    }
+                }
+                .product-two{
+                    margin-right: 20px;
+                    .product-image{
+                        background: #0085FF;
+                        width: 128px;
+                        height: 128px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 15px;
+                        margin: 0 auto;
+                    }
+                }
+                .product-three{
+                    .product-image{
+                        background: #FCD224;
+                        width: 128px;
+                        height: 128px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 15px;
+                        margin: 0 auto;
+                    }
+                }
+                .product-name{
+                    color: #666666;
+                    font-family: 'Montserrat-Bold';
+                    font-size: 18px;
+                    margin-top: 15px;
+                    text-align: center;
+                }
+            }
+        }
+        .loan-details-wrap{
+            margin-top: 12px;
+            border: 1px solid #002087;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            .loan-details{
+                display: flex;
+                .left-wrap {
+                    flex: 1 1 0;
+                    display: flex;
+                    flex-direction: column;
+                    .mspace{
+                        margin-bottom: 15px;
+                    }
+                }
+                .right-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    .mspace{
+                        margin-bottom: 15px;
+                    }
+                }
+                .left-wrap, .right-wrap{
+                    label{
+                        color: #666666;
+                        font-family: 'Montserrat-Medium';
+                    }
+                    span{
+                        color: #666666;
+                        font-size: 18px;
+                        font-family: 'Montserrat-Bold';
+                    }
+                }
+            }
+            .pay-button{
+                ion-button{
+                    --background: #009CF0;
+                    --border-color: transparent;
+                    --color: #fff;
+                    height: 48px;
+                    font-family: 'Montserrat-Bold';
+                    font-size: 18px;
+                    text-transform: capitalize;
+                    margin-top: 23px;
+                    --border-radius: 20px;
+                }
+                
+            }
+        }
+    }
+    .chat{
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        background: #FFFAE3;
+        border: 1px solid #fcd224;
+        width: 80px;
+        text-align: center;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom: 0;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+    }
+}
